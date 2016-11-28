@@ -1,0 +1,6 @@
+package: .
+import:
+- package: gopkg.in/godo.v2
+  version: ~2.0.9
+  subpackages:
+  - cmd/godo
