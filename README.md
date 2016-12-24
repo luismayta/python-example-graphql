@@ -1,6 +1,6 @@
-# python-example-graphql
+# Python Example Graphql
 
-Python Example Graphql
+Example Graphql:
 
 <span class="badges">
 [![Code Climate](https://codeclimate.com/github/luismayta/python-example-graphql/badges/gpa.svg)](https://codeclimate.com/github/luismayta/python-example-graphql)
@@ -12,7 +12,15 @@ Python Example Graphql
 [![Test Coverage](https://codeclimate.com/github/luismayta/python-example-graphql/badges/coverage.svg)](https://codeclimate.com/github/luismayta/python-example-graphql/coverage)
 </span>
 
+Model Schema:
+
 ## Requirements
+
+Execute:
+
+```bash
+make install
+```
 
 ## Changelog
 
