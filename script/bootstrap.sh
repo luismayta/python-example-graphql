@@ -3,7 +3,7 @@
 
 export PROJECT_NAME=python-example-graphql
 
-export PYTHON_VERSION=2.7.9
+export PYTHON_VERSION=3.6.0
 export PYENV_NAME="${PROJECT_NAME}"
 
 export GVM_NAME="${PROJECT_NAME}"
