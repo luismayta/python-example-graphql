@@ -1,0 +1,8 @@
+hash: f3ea079629caef9d24c06b1829286cf33c3f9747638a46299bbc67c36f7b21c1
+updated: 2016-11-27T22:45:28.869200548-05:00
+imports:
+- name: gopkg.in/godo.v2
+  version: b5fd2f0bef1ebe832e628cfad18ab1cc707f65a1
+  subpackages:
+  - cmd/godo
+testImports: []

@@ -1,0 +1,12 @@
+@startuml
+class Product {
+  name : String
+  description : String
+}
+
+class Variant {
+  product : Product
+  name : String
+  description : String
+}
+@enduml
