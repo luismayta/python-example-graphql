@@ -24,7 +24,6 @@ RUNSERVER = $(shell) $(SCRIPT_DIR)/runserver.sh
 SYNC = $(shell) $(SCRIPT_DIR)/sync.sh
 WATCH = $(shell) $(SCRIPT_DIR)/watch.sh
 
-
 ansible_provision:
 	$(ANSIBLE_PROVISION)
 
