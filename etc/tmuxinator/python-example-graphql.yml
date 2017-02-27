@@ -34,35 +34,27 @@ windows:
       panes:
         - editor:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
             - <%= ENV["EDITOR"] %>
         - pwd:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
         - pwd:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
   - python:
       layout: main-vertical
       panes:
         - python:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
   - databases:
       layout: main-vertical
       panes:
         - ls:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
         - ls:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
   - docker:
       layout: main-vertical
       panes:
         - ls:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql
         - ls:
             - pyenv activate python-example-graphql
-            - gvm pkgset use python-example-graphql

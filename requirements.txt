@@ -1,0 +1,8 @@
+dj-database-url==0.4.2
+Django==1.10.5
+psycopg2==2.6.2
+PyYAML==3.12
+requests==2.12.3
+Unipath==1.1
+uwsgi==2.0.14
+yamlreader==3.0.2
