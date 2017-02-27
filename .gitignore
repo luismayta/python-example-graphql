@@ -2,3 +2,5 @@ vendor/.env
 vendor
 .env
 *.sqlite3
+*.pyc
+*_pycache_*
