@@ -1,0 +1,61 @@
+# python-example-graphql: Docker Compose
+# https://docs.docker.com/compose/
+#
+# Usage: docker-compose up
+version: '2'
+services:
+
+  # PostgreSQL database
+  db:
+    restart: always
+    image: dgnest/postgres:9.4
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=graphql
+      - POSTGRES_TEST_DB=graphql_test
+      - POSTGRES_TEST_USER=postgres
+      - POSTGRES_TEST_PASSWORD=postgres
+    env_file: .env
+    volumes:
+      - pgvolume:/var/lib/postgresql/data #using the declared volume
+    ports:
+      - "5432:5432"
+
+  # Django web application
+  web:
+    restart: always
+    image: python:3.6.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: web
+    depends_on:
+      - db
+    ports:
+      - "80:8080"
+      - "8080:5000"
+    volumes_from:
+      - source_store
+    environment: &environment
+      - DB_URL=postgres://postgres:postgres@db:5432/graphql
+      - DB_TEST_URL=postgres://postgres:postgres@db:5432/graphql_test
+      - C_FORCE_ROOT=True
+      - SITE_NAME=graphql
+      - MEDIA_URL=media/
+      - IS_SECURE=True
+      - DEBUG=True
+      - SECRET_KEY=j36%5df7q5+ov)wz+(=vt7d81ka^xx!5%0)nx=z2i&)*5r^
+      - STATIC_URL=static/
+    env_file: .env
+
+
+  source_store:
+    image: busybox
+    volumes:
+      - ./:/app/
+
+volumes:
+  pgvolume:
+    external:
+      name: graphql_pgvolume
