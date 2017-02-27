@@ -6,13 +6,6 @@ export PROJECT_NAME=python-example-graphql
 export PYTHON_VERSION=3.6.0
 export PYENV_NAME="${PROJECT_NAME}"
 
-export GVM_NAME="${PROJECT_NAME}"
-export GVM_PATHS_NAME=(
-    "src"
-    "pkg"
-    "bin"
-)
-
 export GRIP_PORT=6430
 
 # Vars Dir
