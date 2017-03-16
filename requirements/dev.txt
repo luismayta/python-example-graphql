@@ -6,7 +6,7 @@ django-debug-toolbar==1.7
 django-extensions==1.7.7
 docker==2.1.0
 docker-compose==1.11.2
-elpy
+elpy==1.14.1
 epc
 flake8
 grip==4.3.2
