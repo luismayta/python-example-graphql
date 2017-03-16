@@ -10,7 +10,7 @@ elpy==1.14.1
 epc==0.0.5
 flake8==3.3.0
 grip==4.3.2
-importmagic
+importmagic==0.1.7
 ipdb==0.10.1
 ipython==5.1.0
 ipython-genutils==0.1.0
