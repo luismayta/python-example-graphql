@@ -8,7 +8,7 @@ docker==2.1.0
 docker-compose==1.11.2
 elpy==1.14.1
 epc==0.0.5
-flake8
+flake8==3.3.0
 grip==4.3.2
 importmagic
 ipdb==0.10.1
