@@ -1,6 +1,6 @@
 -r ../requirements.txt
 ansible>=2.0.0
-behave-django==0.4.1
+behave-django==0.5.0
 green==2.7.0
 mock==2.0.0
 PyHamcrest==1.9.0
