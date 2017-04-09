@@ -6,6 +6,8 @@ django-debug-toolbar==1.7
 django-extensions==1.7.8
 docker==2.1.0
 docker-compose==1.11.2
+docker==2.2.1
+docker-compose==1.12.0
 elpy==1.14.1
 epc==0.0.5
 flake8==3.3.0
@@ -14,7 +16,7 @@ importmagic==0.1.7
 ipdb==0.10.2
 ipython==5.3.0
 ipython-genutils==0.2.0
-jedi==0.10.0
-pre-commit==0.13.3
+jedi==0.10.2
+pre-commit==0.13.6
 pylint==1.6.5
-yapf==0.16.0
+yapf==0.16.1
