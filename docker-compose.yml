@@ -28,15 +28,15 @@ services:
     image: python:3.6.1
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/web/Dockerfile
     hostname: web
     depends_on:
       - db
     ports:
       - "80:8080"
       - "8080:5000"
-    volumes_from:
-      - ./:/app/
+    volumes:
+      - ./:/app
     environment: &environment
       - DB_DEFAULT_URL=postgres://postgres:postgres@db:5432/graphql
       - DB_TEST_URL=postgres://postgres:postgres@db:5432/graphql_test
