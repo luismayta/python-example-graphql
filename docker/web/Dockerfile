@@ -5,6 +5,9 @@ MAINTAINER Luis Mayta <@slovacus>
 COPY requirements.txt /app/requirements.txt
 COPY requirements /app/requirements/
 
+RUN apt-get update \
+  && apt-get install -y zsh
+
 # set working directory to /app/
 
 WORKDIR /app/
