@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'ex%rs15rfavthhoz4&c313355i!q^qpn4a(p%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', ]
 
 # Application definition
 
@@ -40,7 +40,9 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-THIRD_APPS = []
+THIRD_APPS = [
+    'graphene_django',
+]
 
 LOCAL_APPS = [
     'posts',
@@ -48,6 +50,10 @@ LOCAL_APPS = [
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + LOCAL_APPS
+
+GRAPHENE = {
+    'SCHEMA': 'posts.schema.schema'  # Where your Graphene schema lives
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
