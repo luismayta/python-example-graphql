@@ -5,8 +5,8 @@ bumpversion==0.5.3
 django-debug-toolbar==1.8
 django-extensions==1.7.9
 docker==2.2.1
+elpy==1.15.0
 docker-compose==1.13.0
-elpy==1.14.1
 epc==0.0.5
 flake8==3.3.0
 grip==4.3.2
