@@ -48,7 +48,6 @@ distclean: clean
 
 environment:
 	$(PYENV)
-	$(INSTALL)
 
 
 grip:
