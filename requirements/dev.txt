@@ -7,7 +7,7 @@ django-extensions==1.7.9
 elpy==1.15.1
 docker-compose==1.14.0
 epc==0.0.5
-flake8==3.3.0
+flake8==3.4.0
 grip==4.3.2
 importmagic==0.1.7
 ipdb==0.10.3
